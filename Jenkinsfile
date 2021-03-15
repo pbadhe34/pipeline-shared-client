@@ -9,5 +9,5 @@ log.warning 'Nothing to do!'
   def obj = new org.data.Point()
   data = obj.draw("Square")
   echo data
-  buildMavenStep {user:"Hp-User", repo:"MavenWebApp"}
+  buildMavenStep [user: 'Hp-User', repo: 'MavenWebApp']
 
