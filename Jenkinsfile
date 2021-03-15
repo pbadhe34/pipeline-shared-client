@@ -15,5 +15,5 @@ node {
   def obj = new org.data.Point()
   data = obj.draw("Square")
   echo data
-  buildMavenStep(user: 'Hp-User', repo: 'https://github.com/pbadhe34/Maven-REST-Service')
+  buildMavenStep(user: 'Hp-User', repo: 'Maven-REST-Service')
 
