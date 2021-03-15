@@ -2,9 +2,15 @@
 log.info 'Starting'
 log.warning 'Nothing to do!'
 
+
+node {
+    stage("Hello World") {
+        echoStep "Bava"
+    }
+}
   def scm = new org.data.SCMScript()
   scm.checkOutFrom("SVN")
-   echoStep "Bava"
+  
   echo "Using Point class to draw"
   def obj = new org.data.Point()
   data = obj.draw("Square")
