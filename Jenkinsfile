@@ -4,6 +4,7 @@ log.warning 'Nothing to do!'
 
   def scm = new org.data.SCMScript()
   scm.checkOutFrom("GIT")
-
+   
+  echo "Using Point class"
   def obj = new org.data.Point()
   obj.draw("circle")
