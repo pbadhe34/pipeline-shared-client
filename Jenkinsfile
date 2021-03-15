@@ -3,4 +3,4 @@ log.info 'Starting'
 log.warning 'Nothing to do!'
 
   def scm = new org.data.SCMScript()
-  scm.checkOutFrom(repo)
+  scm.checkOutFrom("GIT")
