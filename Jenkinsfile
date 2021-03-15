@@ -4,3 +4,6 @@ log.warning 'Nothing to do!'
 
   def scm = new org.data.SCMScript()
   scm.checkOutFrom("GIT")
+
+  def obj = new org.data.Point()
+  obj.draw("circle")
