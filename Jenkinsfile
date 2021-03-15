@@ -7,4 +7,5 @@ log.warning 'Nothing to do!'
    
   echo "Using Point class to draw"
   def obj = new org.data.Point()
-  obj.draw("Square")
+  data = obj.draw("Square")
+  echo data
