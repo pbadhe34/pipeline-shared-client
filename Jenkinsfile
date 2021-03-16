@@ -17,3 +17,9 @@ node {
   echo data
   buildMavenStep(user: 'pbadhe34', repo: 'Maven-REST-Service')
 
+
+  //invoke declataive pipeline
+ 
+
+  declarativePipeline(currentBuild.getNumber())
+
