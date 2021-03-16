@@ -15,5 +15,6 @@ node {
   def obj = new org.data.Point()
   data = obj.draw("Square")
   echo data
-  buildMavenStep(user: 'pbadhe34', repo: 'Spring-MVC-Maven')
+  buildMavenStep(user: 'pbadhe34', repo: 'Maven-Spring-App')
+  buildMavenStep(user: 'pbadhe34', repo: 'Maven-REST-Service')
 
