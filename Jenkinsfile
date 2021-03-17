@@ -15,12 +15,24 @@ node {
   def obj = new org.data.Point()
   data = obj.draw("Square")
   echo data
-  buildMavenStep(user: 'pbadhe34', repo: 'Maven-Spring-App')
-  buildMavenStep(user: 'pbadhe34', repo: 'Maven-REST-Service')
+  //buildMavenStep(user: 'pbadhe34', repo: 'Maven-Spring-App')
+ // buildMavenStep(user: 'pbadhe34', repo: 'Maven-REST-Service')
 
 
   //invoke declataive pipeline
  
 
-  declarativePipeline(currentBuild.getNumber())
+ // declarativePipeline(currentBuild.getNumber())
+
+  def get = new URL("http://localhost:8080/Spring-rest-service/person/3").openConnection();
+def getRC = get.getResponseCode();
+println(getRC);
+if(getRC.equals(200)) {    
+  res = get.getInputStream().getText()
+    
+def output = new JsonSlurper().parseText( res )
+
+// Print them out to make sure
+//output.each { println it }
+println output.id
 
