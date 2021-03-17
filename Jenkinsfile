@@ -35,4 +35,4 @@ def output = new JsonSlurper().parseText( res )
 // Print them out to make sure
 //output.each { println it }
 println output.id
-
+}
