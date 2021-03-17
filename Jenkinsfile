@@ -32,7 +32,7 @@ if(getRC.equals(200)) {
     
 //def output = new JsonSlurper().parseText( res )
     obj = com.data.JSONFileReader()
-   output = ob.readJSONTreeData("/home/dell/jsondata.json")
+   output = obj.readJSONTreeData("/home/dell/jsondata.json")
 // Print them out to make sure
 //output.each { println it }
 println output
